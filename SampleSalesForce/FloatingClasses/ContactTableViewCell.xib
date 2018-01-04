@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="ContactTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg8-jI-sAa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContactListicon" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-VS-KXC">
+                                <rect key="frame" x="10" y="8" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81D-fR-bgp">
+                                <rect key="frame" x="50" y="8" width="262" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="D7e-0s-BJw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnJ-oO-0cb">
+                                <rect key="frame" x="50" y="34" width="262" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW4-Sl-vPN">
+                                <rect key="frame" x="50" y="60" width="264" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CnJ-oO-0cb" firstAttribute="trailing" secondItem="rW4-Sl-vPN" secondAttribute="trailing" constant="-2" id="44N-y1-59k"/>
+                            <constraint firstItem="rW4-Sl-vPN" firstAttribute="top" secondItem="CnJ-oO-0cb" secondAttribute="bottom" id="7Wu-w5-VMj"/>
+                            <constraint firstItem="81D-fR-bgp" firstAttribute="trailing" secondItem="CnJ-oO-0cb" secondAttribute="trailing" id="NKN-az-dBi"/>
+                            <constraint firstItem="CnJ-oO-0cb" firstAttribute="leading" secondItem="rW4-Sl-vPN" secondAttribute="leading" id="Pl3-Z8-dRd"/>
+                            <constraint firstItem="Tk3-VS-KXC" firstAttribute="top" secondItem="vg8-jI-sAa" secondAttribute="topMargin" id="QXE-el-nfd"/>
+                            <constraint firstItem="81D-fR-bgp" firstAttribute="leading" secondItem="Tk3-VS-KXC" secondAttribute="trailing" constant="10" id="TC0-Db-uMb"/>
+                            <constraint firstItem="CnJ-oO-0cb" firstAttribute="centerY" secondItem="vg8-jI-sAa" secondAttribute="centerY" id="VuH-ak-g6b"/>
+                            <constraint firstAttribute="trailing" secondItem="81D-fR-bgp" secondAttribute="trailing" constant="8" id="WSy-qv-YT2"/>
+                            <constraint firstItem="rW4-Sl-vPN" firstAttribute="leading" secondItem="vg8-jI-sAa" secondAttribute="leading" constant="50" id="XH1-o6-ShH"/>
+                            <constraint firstItem="CnJ-oO-0cb" firstAttribute="top" secondItem="81D-fR-bgp" secondAttribute="bottom" id="Ysw-JN-4qM"/>
+                            <constraint firstAttribute="bottom" secondItem="rW4-Sl-vPN" secondAttribute="bottom" constant="9" id="cXq-vQ-WbA"/>
+                            <constraint firstItem="81D-fR-bgp" firstAttribute="leading" secondItem="CnJ-oO-0cb" secondAttribute="leading" id="szY-mM-sag"/>
+                            <constraint firstItem="Tk3-VS-KXC" firstAttribute="top" secondItem="81D-fR-bgp" secondAttribute="top" id="tKb-Rb-qev"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vg8-jI-sAa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LKA-in-yN8"/>
+                    <constraint firstItem="vg8-jI-sAa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YUO-8z-nd9"/>
+                    <constraint firstItem="vg8-jI-sAa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jjJ-Ly-84g"/>
+                    <constraint firstAttribute="trailing" secondItem="vg8-jI-sAa" secondAttribute="trailing" id="nmG-I0-Zm6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="accountNameLbl" destination="CnJ-oO-0cb" id="xlt-Iu-x3Y"/>
+                <outlet property="accountTitleLbl" destination="rW4-Sl-vPN" id="0Ue-iW-mYr"/>
+                <outlet property="backgroundView" destination="vg8-jI-sAa" id="zVt-Yt-LbC"/>
+                <outlet property="contactNameLbl" destination="81D-fR-bgp" id="Evy-dV-zlA"/>
+                <outlet property="imgView" destination="Tk3-VS-KXC" id="zKZ-TR-YMe"/>
+            </connections>
+            <point key="canvasLocation" x="-201" y="25.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ContactListicon" width="30" height="30"/>
+    </resources>
+</document>
